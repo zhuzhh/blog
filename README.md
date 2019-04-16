@@ -11,3 +11,5 @@ my blog
 [js的垃圾回收算法介绍](https://github.com/zhuzhh/blog/issues/5)
 
 [跨域问题总结](https://github.com/zhuzhh/blog/issues/6)
+
+[解析js连续赋值的坑](https://github.com/zhuzhh/blog/issues/7)
