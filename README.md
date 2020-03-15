@@ -12,4 +12,6 @@ my blog
 
 [跨域问题总结](https://github.com/zhuzhh/blog/issues/6)
 
-[解析js连续赋值的坑](https://github.com/zhuzhh/blog/issues/7)
+[//] [解析js连续赋值的坑](https://github.com/zhuzhh/blog/issues/7)
+
+[白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
