@@ -15,3 +15,5 @@ my blog
 [comment]: [解析js连续赋值的坑](https://github.com/zhuzhh/blog/issues/7)
 
 [白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
+
+[深度了解 Array.prototype.includes ](https://github.com/zhuzhh/blog/issues/9)
