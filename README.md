@@ -17,3 +17,5 @@ my blog
 [白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
 
 [深度了解 Array.prototype.includes ](https://github.com/zhuzhh/blog/issues/9)
+
+[聚焦es2020新特性](https://github.com/zhuzhh/blog/issues/10)
