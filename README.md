@@ -2,6 +2,16 @@ my blog
 
 [my-resume](https://github.com/zhuzhh/resume/issues/1)
 
+[前端工程化思考](https://github.com/zhuzhh/blog/issues/12)
+
+[BFC清除浮动原理探究](https://github.com/zhuzhh/blog/issues/11)
+
+[聚焦es2020新特性](https://github.com/zhuzhh/blog/issues/10)
+
+[深度了解 Array.prototype.includes ](https://github.com/zhuzhh/blog/issues/9)
+
+[白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
+
 [vue 生命周期方法及深入解析](https://github.com/zhuzhh/blog/issues/2)
 
 [commonjs简介](https://github.com/zhuzhh/blog/issues/3)
@@ -13,11 +23,3 @@ my blog
 [跨域问题总结](https://github.com/zhuzhh/blog/issues/6)
 
 [comment]: [解析js连续赋值的坑](https://github.com/zhuzhh/blog/issues/7)
-
-[白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
-
-[深度了解 Array.prototype.includes ](https://github.com/zhuzhh/blog/issues/9)
-
-[聚焦es2020新特性](https://github.com/zhuzhh/blog/issues/10)
-
-[BFC清除浮动原理探究](https://github.com/zhuzhh/blog/issues/11)
