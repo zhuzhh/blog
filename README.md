@@ -2,6 +2,8 @@ my blog
 
 [my-resume](https://github.com/zhuzhh/resume/issues/1)
 
+[浏览器关键渲染路径](https://github.com/zhuzhh/blog/issues/18)
+
 [浏览器专题](https://github.com/zhuzhh/blog/issues/17)
 
 [前端工程化思考](https://github.com/zhuzhh/blog/issues/13)
