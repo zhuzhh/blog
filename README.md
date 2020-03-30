@@ -2,6 +2,8 @@ my blog
 
 [my-resume](https://github.com/zhuzhh/resume/issues/1)
 
+[vue常见知识点总结](https://github.com/zhuzhh/blog/issues/22)
+
 [浏览器渲染流程](https://github.com/zhuzhh/blog/issues/19)
 
 [浏览器关键渲染路径](https://github.com/zhuzhh/blog/issues/18)
