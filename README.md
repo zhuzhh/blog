@@ -2,6 +2,8 @@ my blog
 
 [my-resume](https://github.com/zhuzhh/resume/issues/1)
 
+[webpack专题](https://github.com/zhuzhh/blog/issues/35)
+
 [http专题](https://github.com/zhuzhh/blog/issues/29)
 
 [面试题总结](https://github.com/zhuzhh/blog/issues/23)
