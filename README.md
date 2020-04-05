@@ -4,6 +4,8 @@ my blog
 
 [webpack专题](https://github.com/zhuzhh/blog/issues/35)
 
+[web安全专题](https://github.com/zhuzhh/blog/issues/31)
+
 [http专题](https://github.com/zhuzhh/blog/issues/29)
 
 [面试题总结](https://github.com/zhuzhh/blog/issues/23)
