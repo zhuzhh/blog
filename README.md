@@ -10,6 +10,8 @@ my blog
 
 [面试题总结](https://github.com/zhuzhh/blog/issues/23)
 
+[vue专题 - 派发更新](https://github.com/zhuzhh/blog/issues/38)
+
 [vue常见知识点总结](https://github.com/zhuzhh/blog/issues/22)
 
 [浏览器渲染流程](https://github.com/zhuzhh/blog/issues/19)
