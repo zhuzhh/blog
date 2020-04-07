@@ -2,7 +2,7 @@ my blog
 
 [my-resume](https://github.com/zhuzhh/resume/issues/1)
 
-[洋葱模型](https://github.com/zhuzhh/blog/issues/36)
+[洋葱模型思考](https://github.com/zhuzhh/blog/issues/36)
 
 [webpack专题](https://github.com/zhuzhh/blog/issues/35)
 
