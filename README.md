@@ -4,8 +4,6 @@ my blog
 
 [script脚本执行顺序之defer、async](https://github.com/zhuzhh/blog/issues/42)
 
-[洋葱模型思考](https://github.com/zhuzhh/blog/issues/36)
-
 [webpack专题](https://github.com/zhuzhh/blog/issues/35)
 
 [web安全专题](https://github.com/zhuzhh/blog/issues/31)
