@@ -2,6 +2,8 @@ my blog
 
 [my-resume](https://github.com/zhuzhh/resume/issues/1)
 
+[js继承](https://github.com/zhuzhh/blog/issues/46)
+
 [script脚本执行顺序之defer、async](https://github.com/zhuzhh/blog/issues/42)
 
 [webpack专题](https://github.com/zhuzhh/blog/issues/35)
