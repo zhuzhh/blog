@@ -1,10 +1,9 @@
-my blog
+
+[vue专题 - 派发更新](https://github.com/zhuzhh/blog/issues/38)
 
 [web安全专题](https://github.com/zhuzhh/blog/issues/31)
 
 [http专题](https://github.com/zhuzhh/blog/issues/29)
-
-[vue专题 - 派发更新](https://github.com/zhuzhh/blog/issues/38)
 
 [vue常见知识点总结](https://github.com/zhuzhh/blog/issues/22)
 
