@@ -19,9 +19,9 @@
 
 [聚焦es2020新特性](https://github.com/zhuzhh/blog/issues/10)
 
-[白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
-
 [commonjs简介](https://github.com/zhuzhh/blog/issues/3)
+
+[白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
 
 
 
