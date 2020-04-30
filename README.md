@@ -13,9 +13,9 @@
 
 [web安全专题](https://github.com/zhuzhh/blog/issues/31)
 
-[http专题](https://github.com/zhuzhh/blog/issues/29)
-
 [白话前端弹幕实现 ](https://github.com/zhuzhh/blog/issues/8)
+
+[http专题](https://github.com/zhuzhh/blog/issues/29)
 
 [BFC清除浮动原理探究](https://github.com/zhuzhh/blog/issues/11)
 
