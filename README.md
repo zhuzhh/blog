@@ -1,7 +1,7 @@
 
-[vue常见知识点总结](https://github.com/zhuzhh/blog/issues/22)
-
 [vue专题 - 派发更新](https://github.com/zhuzhh/blog/issues/38)
+
+[vue常见知识点总结](https://github.com/zhuzhh/blog/issues/22)
 
 [vue 生命周期方法及深入解析](https://github.com/zhuzhh/blog/issues/2)
 
