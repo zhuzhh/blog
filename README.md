@@ -1,5 +1,5 @@
 
-[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=zhuzhh)](https://github.com/anuraghazra/github-readme-stats)
+[![Anurag's GitHub stats](https://github-readme-stats.vercel.app/api?username=zhuzhh&theme=radical)](https://github.com/anuraghazra/github-readme-stats)
 
 [vue专题 - 派发更新](https://github.com/zhuzhh/blog/issues/38)
 
