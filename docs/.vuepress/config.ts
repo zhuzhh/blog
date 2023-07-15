@@ -37,9 +37,39 @@ export default defineUserConfig({
     ],
     sidebar: {
       '/basic/': [
-        'html',
-        'css',
-        'js'
+        '/basic/html',
+        {
+          text: 'Css',
+          link: '/basic/css',
+          children:[
+            {
+              text: 'css基础',
+              link: '/basic/css'
+            },
+            {
+              text: 'css动画',
+              link: '/basic/css/animation'
+            }
+          ]
+        },
+        {
+          text: 'JavaScript',
+          link: '/basic/js',
+          children: [
+            {
+              text: 'js基础',
+              link: '/basic/js'
+            },
+            {
+              text: 'es6',
+              link: '/basic/js/es6'
+            },
+            {
+              text: '迭代器',
+              link: '/basic/js/iterator'
+            }
+          ]
+        }
       ],
       '/engine/': [
         'summary',
