@@ -190,4 +190,54 @@ new Function('return this')()
 ```js
 let [foo] = 1; // 报错
 ```
+只要某种数据结构具有 Iterator 接口，都可以采用数组形式的解构赋值
+比如 Generator 函数，原生具有 Iterator 接口。解构赋值会依次从这个接口获取值
+
+#### 默认值
+```js
+let [foo = true] = []
+foo // true
+```
+
+使用严格相等(====)判断某个值是否是 undefined，默认值才会生效
+```js
+let [foo = true] = [null]
+foo // null
+```
+因为null !== undefined
+
+#### 对象解构赋值
+解构后重命名
+```js
+let { aa: baz } = { aa: 'aaa', bb: 'bbb' };
+baz // "aaa"
+```
+对象的解构，默认值生效的条件判断属性值严格等于(===) undefined
+
+**由于数组本质是特殊的对象**，因此可以对数组进行对象属性的解构
+```js
+let arr = [1, 2, 3];
+let {0 : first, [arr.length - 1] : last} = arr;
+first // 1
+last // 3
+```
+
+**特殊场景**
+```js
+// 字符串
+const [a, b, c, d, e] = 'hello';
+a // "h"
+b // "e"
+c // "l"
+
+let {length : len} = 'hello';
+len // 5
+
+// 数值和布尔
+let {toString: s} = 123;
+s === Number.prototype.toString // true
+
+let {toString: s} = true;
+s === Boolean.prototype.toString // true
+```
 
