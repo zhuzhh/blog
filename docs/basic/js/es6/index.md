@@ -241,3 +241,31 @@ let {toString: s} = true;
 s === Boolean.prototype.toString // true
 ```
 
+### BigInt数据类型
+为了与 Number 类型区别，BigInt 类型的数据必须添加后缀n
+
+```js
+1234 // 普通整数
+1234n // BigInt
+
+// BigInt 的运算
+1n + 2n // 3n
+```
+
+BigInt 同样可以使用各种进制表示，都要加上后缀n
+```js
+0b1101n // 二进制
+0o777n // 八进制
+0xFFn // 十六进制
+```
+
+BigInt 与普通整数是两种值，它们之间并不相等
+```js
+42n === 42 // false
+```
+
+typeof运算符对于 BigInt 类型的数据返回bigint
+```js
+typeof 123n // 'bigint'
+```
+
