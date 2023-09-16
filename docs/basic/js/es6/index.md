@@ -269,3 +269,31 @@ typeof运算符对于 BigInt 类型的数据返回bigint
 typeof 123n // 'bigint'
 ```
 
+### Set 和 Map
+Object对象属性名是一个对象时，会产生预期意外的效果，比如:
+```js
+let map = Object.create(null),
+    key1 = {},
+    key2 = {};
+
+map[key1] = 'zzh'
+
+console.log(map[key2]) // zzh
+```
+
+#### Set
+- ES6新增了 `Set` 类型，不重复的有序列表  
+
+- `Set` 判断重复的依据方法是 `Object.is()`，唯一例外的是 +0 和 -0 在 Set 中被判断为是相等的
+```js
+const set = new Set([0, +0, -0])
+
+set.size // 1
+```
+
+- Set 构造器可以接收任意可迭代的对象最为参数；上例中能使用数组是因为他们默认就是可迭代的
+
+- Set 的遍历方法 `forEach`，和数组的 `forEach`方法的区别是: 回调函数的第一个参数和第二个参数是相同的  
+看起来是个错误，但是其有个正当理由——为了让 Set 的`forEach`方法与数组及Map版本的保持一致，该回调该函数的前两个参数就始终相同了
+
+用一个普通对象实现私有属性？ 怎么做？
