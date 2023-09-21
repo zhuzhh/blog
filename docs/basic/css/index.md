@@ -27,3 +27,5 @@ https://blog.windstone.cc/css/selectors/
 
 overflow
   scroll、auto、clip什么区别？
+
+## css 变量

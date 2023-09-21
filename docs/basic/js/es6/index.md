@@ -1,4 +1,4 @@
-# es6
+# es6[es6相关文章笔记]
 
 ### ECMAScript 和 JavaScript 的关系
 **ECMAScript 和 JavaScript 的关系是，前者是后者的规格，后者是前者的一种实现**
@@ -10,7 +10,7 @@
 
 ### let 和 const
 let 只在代码块内生效
-```js
+```javascript
 var a = [];
 for (let i = 0; i < 10; i++) {
   a[i] = function () {
@@ -297,3 +297,6 @@ set.size // 1
 看起来是个错误，但是其有个正当理由——为了让 Set 的`forEach`方法与数组及Map版本的保持一致，该回调该函数的前两个参数就始终相同了
 
 用一个普通对象实现私有属性？ 怎么做？
+
+
+### 
