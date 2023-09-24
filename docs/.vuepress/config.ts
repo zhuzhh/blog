@@ -28,7 +28,7 @@ export default defineUserConfig({
       },
       {
         text: '精选文章',
-        link: '/glory'
+        link: '/articles'
       },
       {
         text: '面试题',
