@@ -156,4 +156,124 @@ this._c('message', this.message)
 的数据做比较，对比出哪些字段变了，提取出来，再次去触发setData  
 另外这个触发setData执行时机，也不是立即执行的，是放在了nextTick执行的，依赖了Promise.resolve实现的
 
+### 垃圾回收机制
+js数据的存储，基础数据类型是存放在栈中，引用数据类型存在在堆中
+当执行一个函数时，js引擎会创建执行上下文，将函数执行上下文压入栈中，然后会有一个指向当前执行状态的指针(ESP)，当一个函数执行完毕后，该指针会下移，
+这个下移的操作，就会销毁函数执行上下文。  
+**堆中的数据回收**  
+不管什么垃圾回收器，其流程都是一样的
+- 标记空间中哪些可回收，哪些不可回收
+- 标记完成之后，统一清理内存
+- 内存整理，把不连续的内存空间，内存碎片
+在 V8 中会把堆分为新生代和老生代两个区域，新生代中存放的是生存时间短的对象，老生代中存放的生存时间久的对象。
+新生区会被平分为两个区域，一个是对象区域、一个是空闲区域
+当对象区域快满的时候，会进行一次垃圾回收，首先是对垃圾做标记，然后把存活的对象，复制到空闲区域中；那这个过程不会造成内存碎片
+然后二者角色翻转
+在新生代经过多次回收，仍旧存活的对象，会晋升到老生区
 
+**老生区**
+老生区采用标记清除的算法，是从根开始遍历，能访问到的，算是存活的对象，不能访问到的，就是垃圾数据
+清理完垃圾数据后，会存在内存碎片(不连续的内存)
+
+处理这些内存碎片，使用到的是标记整理算法
+
+**全停顿**
+垃圾回收期间，js是暂停执行的，内存越大时，这个暂停时长越长
+为了处理因为垃圾回收造成的卡顿，v8将标记的过程，分为一个一个子的标记过程，同时垃圾回收标记和js交替执行，只到标记完成
+这个过程被称为增量标记
+
+
+### 浏览器页面渲染过程
+
+## 浏览器的缓存机制
+https://segmentfault.com/a/1190000017004307
+
+
+### Object.getOwnPropertyNames、Object.keys 区别
+都会返回对象下的属性，不会返回原型链上的属性  
+区别:  
+- Object.keys 返回可枚举的  
+- Object.getOwnPropertyNames 返回所有的
+
+### 防抖、节流
+防抖: n秒内只执行一次，如果在n秒内高频调用该函数，则会重置时间
+```javascript
+function debounce (fn, wait) {
+  let timer = null
+  return function debounced (_this, ...args) {
+    const context = _this
+    if (timer) clearTimeout(timer)
+    timer = setTimeout(function (args) {
+      fn.apply(_this, args)
+      timer = null
+    }, wait)
+  }
+}
+
+// immediate 版本
+function debounce (fn, wait, immdiate) {
+  let timer = null
+  function debounced (_this, ...args) {
+    const context = _this
+    if (immdiate) {
+      if (timer) {
+        clearTimeout(timer)
+      } else {
+        fn.apply(_this, args)
+      }
+      timer = setTimeout(function () {
+        timer = null
+      }, wait)
+    } else {
+      if (timer) clearTimeout(timer)
+      timer = setTimeout(function () {
+        fn.apply(_this, args)
+      })
+    }
+  }
+}
+```
+节流: n秒内只执行一次，如果n秒内高频调用该函数，只有一次生效
+```javascript
+function throttle (fn, wait) {
+  const start = Date.now()
+  return function throttled (_this, ...args) {
+    const context = _this
+    const end = Date.now()
+    if (end - start > wait) {
+      fn.apply(context, args)
+      start = Date.now()
+    }
+  }
+}
+// 指定调用在函节流开始前执行
+function throttle (fn, wait, leading) {
+  let waiting = false
+  let lastArgs = undefined
+
+  function exec (_this, ...args) {
+    let context = _this
+    if (leading) {
+      fn.apply(context, args)
+    }
+    waiting = true
+    setTimeout(function () {
+      waiting = false
+      if (lastArgs) {
+        fn.apply(context, lastArgs)
+        lastArgs = undefined
+      }
+    })
+  }
+
+  return function throttle (args) {
+    if (waiting) {
+      lastArgs = args
+    } else {
+      exec()
+    }
+  }
+}
+```
+
+### 柯里化
